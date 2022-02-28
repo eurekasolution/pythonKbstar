@@ -18,3 +18,8 @@
 for x in range(5):
     print(x)
     print('위 수의 제곱 = ', x**2)
+
+# github.com/eurekasolution
+
+x = "hello"
+print(x)
