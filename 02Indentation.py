@@ -21,5 +21,3 @@ for x in range(5):
 
 # github.com/eurekasolution
 
-x = "hello"
-print(x)
