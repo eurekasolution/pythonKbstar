@@ -27,3 +27,17 @@ for c in text:
     else:
         rText += c.upper()
 print("rText = ", rText)
+
+test = "Hello World"
+print(test.replace("Hello", "Oops"))
+test = test.replace("Hello", "Oops2")
+print(test)
+
+print("text = " , text)
+print("Swap = ", text.swapcase())
+
+print("-" * 80)
+# text를 역순으로 출력하시오.
+# rText 에 역순을 저장한 후, rText를 출력하시오.
+# range(10, -1, -1)
+# range(1, 10, 1)
