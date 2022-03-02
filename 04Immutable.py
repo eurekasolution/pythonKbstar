@@ -7,7 +7,7 @@ print(id(a))
 a = "World"
 print(id(a))
 
-myList = ["Hello"]
+myList = ["Hello", 123, [1, 2, 3, 4]]  #myList[2][1]
 print(myList)
 print(type(myList))
 print(id(myList))
@@ -49,7 +49,7 @@ print(lotto)
 lotto.insert(1, 333)
 print(lotto)
 
-val = lotto.pop(4)
+val = lotto.pop(4)  # list=> ls , remove => rm
 print("val = ", val)
 print(lotto)
 

@@ -20,6 +20,7 @@ print(id(test))
 test = input("Insert Name ")
 print(test)
 
+
 # 변수 :  메모리가 매번 바뀐다.
 # 데이터를 보고 타입이 자동으로 결정된다. int, str
 # type 확인 : type(변수명)
@@ -37,6 +38,7 @@ print("내 이름은 " , name , " 이고 내년에는 " , age +1 , "입니다.")
 # 변수명 = input("출력메시지")
 myAge = input("Insert Age : ")
 print("myAge = ", myAge)
+print(type(myAge))
 
 name = '작은 따옴표'
 print(type(name))
