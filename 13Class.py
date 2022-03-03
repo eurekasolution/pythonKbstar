@@ -84,6 +84,8 @@ doge.addTrick("sleep")
 doge.addTrick("eat")
 
 print(puppy.tricks)
+print("******************")
+print( Dog.tricks )
 
 class BullDog:
     def __init__(self, name):
@@ -107,4 +109,24 @@ print(doge.tricks)
 
 print( dir(BullDog) )       # dir() : 클래스 내부에 있는 객체 확인
 
+class Truck :
+    __nation = "KOREA"                    # 변수 장식
+    def __init__(self, name, color):    # 인스턴스 변수
+        self.name = name
+        self.color = color
 
+    def printTruck(self):
+        print("(name, color, nation) = (",
+              self.name, ", ",
+              self.color ,", " ,
+              self.__nation, ")")
+
+    def setNation(self, nation):
+        self.__nation = nation
+
+truck = Truck("truck", "green")
+truck.printTruck()
+print(truck.name)
+#print(truck.__nation)
+truck.setNation("USA")
+truck.printTruck()
