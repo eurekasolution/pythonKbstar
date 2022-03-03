@@ -41,3 +41,9 @@ print("-" * 80)
 # rText 에 역순을 저장한 후, rText를 출력하시오.
 # range(10, -1, -1)
 # range(1, 10, 1)
+
+rText = str()
+for c in range( len(text)-1, -1, -1 ):
+    rText += text[c]
+print("Reverse = ", rText)
+print("Same = ", text[::-1])
