@@ -23,16 +23,21 @@ def passwdValidationCheck(pwd):
     print(pwd, "는 비밀번호로 적당합니다.")
     return True
 
-passwdValidationCheck("abcd1234")
-passwdValidationCheck("AbCd")
-passwdValidationCheck("AbCd1234")
-passwdValidationCheck("AbCd@1223")
-passwdValidationCheck("@AbCd1223#")
 
+print("xxxxxxxxxxxxxxxxxxxx")
 
+if __name__ == "__main__":
+    passwdValidationCheck("abcd1234")
+    passwdValidationCheck("AbCd")
+    passwdValidationCheck("AbCd1234")
+    passwdValidationCheck("AbCd@1223")
+    passwdValidationCheck("@AbCd1223#")
+
+"""
 def checkEmailValiation(email):
-    """
     이메일 패턴 [\w.-]+@[\w.-]+\.\w+
     :param email:
     :return:
-    """
+   
+"""
+
