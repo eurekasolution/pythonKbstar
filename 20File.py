@@ -15,7 +15,7 @@ print("*" * 80)
 
 for x in range(1500):
     try:
-        f = open("d:/xxx/" + str(x) + ".txt", "w")
+        f = open("./xxx/" + str(x) + ".txt", "w")
     except IOError:
         print("Error : " , x)
 
