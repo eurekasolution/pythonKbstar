@@ -6,7 +6,7 @@
 colors = "red", "blue", "green", "yellow", "black"
 size = len(colors)
 print("size = ", size)
-
+print("type color = ", type(colors))
 for color in colors:
     print(color)
 
