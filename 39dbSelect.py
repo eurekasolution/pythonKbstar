@@ -8,30 +8,28 @@ try:
 
     db = client['test']
     print('저자\t\t', '제목\t', '종류')
-    print('=' * 50)
     for d in db['posts'].find():
          print(d['author'], '\t', d['title'], '\t', d['kind'])
 
     print('전체레코드갯수 =', db['posts'].estimated_document_count())
+    print('=' * 100)
     print()
-    name = input('저자검색입력 >>> ') #select * from T where author='two' ;
-    search = db['posts'].find( { 'author': name} )
-    print('search 값 ' , search )
+
+    name = input('저자검색입력 >>> ')
+    search = db['posts'].find_one( { 'author': name} )
     if search is None:
         print(name, ' 검색결과가 없습니다')
         exit(-1)
 
-    print(name, ' 검색결과로 아래데이터 출력성공')
-    for d in search:
-        print(d['author'], d['title'], d['kind'])
+    print(search ['author'], search ['title'], search ['kind'])
 
-    print()
-    time.sleep(2)
-    name2 = input('저자검색입력 like >>> ') #~~T where author like '%t%' ;
-    search2 = db['posts'].find({'author': { '$regex':name2} })
-    for d2 in search2:
-        print(d2['author'], d2['title'], d2['kind'])
-    # print('조회레코드갯수 =', db['posts'].estimated_document_count())
+    # print()
+    # time.sleep(2)
+    # name2 = input('저자검색입력 like >>> ') #~~T where author like '%t%' ;
+    # search2 = db['posts'].find({'author': { '$regex':name2} })
+    # for d2 in search2:
+    #     print(d2['author'], d2['title'], d2['kind'])
+    # # print('조회레코드갯수 =', db['posts'].estimated_document_count())
 except Exception as err:
     print('db조회에러발생 : ', err)
 
