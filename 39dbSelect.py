@@ -12,5 +12,8 @@ try:
          print(d['author'], '\t', d['title'], '\t', d['kind'])
 
     print('전체레코드갯수 =', db['posts'].estimated_document_count())
+    print()
+    name = input('저자검색입력 >>> ')
+    ff = client.test.posts.find( { 'author': name} )
 except Exception as err:
     print('db조회에러발생 : ', err)
