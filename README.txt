@@ -1,2 +1,7 @@
 README FOR NoSQL
-2022-04-05 Init
+
+GIT 위치
+
+https://github.com/eurekasolution/pythonKbstar
+
+http://naver.me/FWvOX0lg
