@@ -1,4 +1,5 @@
-#LG.py문서 작성
+# LG.py문서 작성
+# https://github.com/eurekasolution/pythonKbstar
 
 userID = 'skyKBstar'    #전역변수=필드=field
 userPWD = '340534ghgh'  #전역변수=필드=field
@@ -9,6 +10,6 @@ def gram():
 
 def star():
    print('LG star 함수')
-   print('star 김연아')
+   print('star 김영임')
 
 
