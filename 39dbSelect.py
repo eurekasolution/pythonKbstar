@@ -18,10 +18,10 @@ try:
     name = input('저자검색입력 >>> ')
     search = db['posts'].find_one( { 'author': name} )
     if search is None:
-        print(name, ' 검색결과가 없습니다')
+        print(name, "검색결과가 없습니다")
         exit(-1)
 
-    print(search ['author'], search ['title'], search ['kind'])
+    print(search['author'], search['title'], search['kind'])
 
     # print()
     # time.sleep(2)
